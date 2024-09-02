@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 /* Start header */
 .header {
   height: 800px;
