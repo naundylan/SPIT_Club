@@ -1,4 +1,5 @@
 body {
+  height: fit-content;
   overflow: hidden;
 }
 
