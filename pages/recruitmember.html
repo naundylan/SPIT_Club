@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta -->
+
+    <!-- Icon -->
+    <link
+      rel="shortcut icon"
+      href="../assets/images/SPIT.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Icon -->
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- Swiper CSS -->
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+
+    <!-- Animate css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Animate css -->
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/pages/recruitmember.css" />
+    <!-- My CSS -->
+
+    <title>SPIT Club - Tuyển thành viên</title>
+  </head>
+  <body>
+    <!-- Start alert -->
+    <div class="alert send-form alert-success">
+      <div class="alert-wrapper">
+        <div class="alert-icon" style="--background-color: #07bc0c">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="alert-content">Gửi form thành công</div>
+      </div>
+      <div class="alert-close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="progress-container">
+        <div class="progress-bar" style="--background-color: #07bc0c"></div>
+      </div>
+    </div>
+
+    <div class="alert send-form alert-fail">
+      <div class="alert-wrapper">
+        <div class="alert-icon" style="--background-color: #9b231f">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="alert-content">Gửi form thất bại</div>
+      </div>
+      <div class="alert-close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="progress-container">
+        <div class="progress-bar" style="--background-color: #9b231f"></div>
+      </div>
+    </div>
+    <script src="../assets/js/alert.js"></script>
+
+    <div class="alert send-form alert-duplicate">
+      <div class="alert-wrapper">
+        <div class="alert-icon" style="--background-color: #a96828">
+          <i class="fa-solid fa-info"></i>
+        </div>
+        <div class="alert-content">Form đã được gửi trước đó</div>
+      </div>
+      <div class="alert-close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="progress-container">
+        <div class="progress-bar" style="--background-color: #a96828"></div>
+      </div>
+    </div>
+    <!-- End alert -->
+
+    <!-- Start menu -->
+    <div class="menu-wrapper">
+      <div class="menu">
+        <div class="menu-contain container-md">
+          <a href="/" class="menu-logo" id="menuLogo">
+            <img
+              src="../assets/images/Menu/SPIT_Logo.png"
+              alt="Logo của SPIT CLub"
+            />
+            <div class="menu-content">
+              <p class="menu-subtitle">TRƯỜNG ĐẠI HỌC KHOA HỌC, ĐẠI HỌC HUẾ</p>
+              <strong class="menu-title">CLB HỖ TRỢ LẬP TRÌNH</strong>
+            </div>
+          </a>
+          <nav class="navigation" id="navigation">
+            <div class="navigation-close">
+              <a href="/" class="navigation-logo">
+                <img
+                  src="../assets/images/Menu/SPIT_Logo.png"
+                  alt="Logo của SPIT CLub"
+                />
+              </a>
+              <i class="fa-solid fa-xmark hide-icon" id="hideNavigation"></i>
+            </div>
+            <a href="./introduce.html" class="navigation-item">GIỚI THIỆU</a>
+            <a href="./activities.html" class="navigation-item">HOẠT ĐỘNG</a>
+            <a href="./news.html" class="navigation-item">TIN TỨC, THÔNG BÁO</a>
+            <a href="./recruitmember.html" class="navigation-item active"
+              >TUYỂN THÀNH VIÊN</a
+            >
+          </nav>
+          <i
+            class="fa-solid fa-bars-staggered show-icon"
+            id="showNavigation"
+          ></i>
+        </div>
+        <div class="mask" id="navigationOverlay"></div>
+      </div>
+    </div>
+
+    <script src="../assets/js/navigation.js"></script>
+    <!-- End menu -->
+
+    <!-- Start header -->
+    <header class="header">
+      <div class="header-background">
+        <div class="background-main">
+          <img
+            src="../assets/images/pages/recruitmember/Header/Background_main-Desktop.png"
+            alt=""
+            class="desktop wow animate__animated animate__bounceIn"
+          />
+          <img
+            src="../assets/images/pages/recruitmember/Header/Background_main-Tablet.png"
+            alt=""
+            class="tablet desktop wow animate__animated animate__bounceIn"
+          />
+          <img
+            src="../assets/images/pages/recruitmember/Header/Background_main-Mobile.png"
+            alt=""
+            class="mobile desktop wow animate__animated animate__bounceIn"
+          />
+          <div class="background-extra">
+            <img
+              src="../assets/images/pages/recruitmember/Header/Our_future.png"
+              alt=""
+              class="clouds-left wow animate__animated animate__backInUp"
+              data-wow-duration="1s"
+            />
+          </div>
+          <div class="background-clouds">
+            <div
+              class="clouds-left wow animate__animated animate__fadeInLeft"
+              data-wow-duration="1s"
+            >
+              <img
+                src="../assets/images/pages/recruitmember/Header/Cloud_left.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="clouds-right wow animate__animated animate__fadeInRight"
+              data-wow-duration="1s"
+            >
+              <img
+                src="../assets/images/pages/recruitmember/Header/Cloud_right.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container-md wow animate__animated animate__lightSpeedInLeft"
+        data-wow-duration="1s"
+        data-wow-delay="0.5s"
+      >
+        <div class="header-wrapper">
+          <h1 class="header-title">Tuyển thành viên</h1>
+          <div class="header-content">
+            <p>
+              <b>Đối tượng:</b> Là sinh viên năm 1, 2, 3 đang học ngành Công
+              nghệ thông tin, Kỹ thuật phần mềm hoặc các ngành khác có liên quan
+              tại trường.
+            </p>
+            <span><b>Yêu cầu:</b></span>
+            <ul>
+              <li>
+                <b>Đối với sinh viên năm 1:</b> Đạt điểm A học phần Nhập môn lập
+                trình.
+              </li>
+              <li>
+                <b> Đối với sinh viên năm 2 và năm 3:</b> Đạt điểm A học phần
+                Nhập môn lập trình và Kỹ thuật lập trình.
+              </li>
+            </ul>
+            <p id="dateTime">
+              <b>Thời gian ứng tuyển:</b> 15/01/2024 - 19/01/2024
+            </p>
+          </div>
+          <a class="link-button get-form" id="openForm" href="#formWrapper">
+            <p>Đăng ký ngay</p>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Start can not get form now -->
+    <div class="cannot-getform-wrapper">
+      <div class="cannot-getform">
+        <div class="inner-top">
+          <h3 class="inner-title">FORM TUYỂN THÀNH VIÊN</h3>
+          <div class="inner-icon" id="closeCannotGetForm">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div class="inner-middle">
+          <div class="inner-image">
+            <img
+              src="../assets/images/pages/recruitmember/Form/Cannot_getform.png"
+              alt=""
+            />
+          </div>
+          <div class="inner-content">
+            <p class="inner-description main">
+              Không phải thời điểm tuyển thành viên!
+            </p>
+            <p class="inner-description extra">Vui lòng thử lại sau.</p>
+          </div>
+        </div>
+        <div class="inner-bottom">
+          <div class="inner-confirm" id="closeCannotGetForm">
+            <p class="inner-ok">OK</p>
+          </div>
+        </div>
+      </div>
+      <script src="../assets/js/form-status.js"></script>
+    </div>
+
+    <!-- End can not get form now -->
+
+    <!-- Start form -->
+    <section class="form" id="formWrapper">
+      <div class="swiper-pagination"></div>
+      <div class="form-background swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="../assets/images/pages/recruitmember/Form/BackgroundOne.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../assets/images/pages/recruitmember/Form/BackgroundTwo.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../assets/images/pages/recruitmember/Form/BackgroundThree.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../assets/images/pages/recruitmember/Form/BackgroundFour.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../assets/images/pages/recruitmember/Form/BackgroundFive.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../assets/images/pages/recruitmember/Form/BackgroundSix.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../assets/images/pages/recruitmember/Form/BackgroundSeven.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../assets/images/pages/recruitmember/Form/BackgroundEight.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="form-wrapper">
+          <div class="form-head">
+            <div class="swiper-button-prev"></div>
+            <h3 class="head-title">FORM TUYỂN THÀNH VIÊN</h3>
+          </div>
+          <form action="https://formspree.io/f/mvgpyood" method="post">
+            <div class="form-body">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="first-form swiper-slide">
+                    <div class="information-type">
+                      <h4>Thông tin cơ bản</h4>
+                    </div>
+                    <div class="form-groups">
+                      <div class="form-group">
+                        <label for="name">Họ và tên:</label>
+                        <input
+                          required
+                          class="form-control"
+                          type="text"
+                          name="name"
+                          id="name"
+                          placeholder="VD: Nguyễn Văn A"
+                          autocomplete="additional-name"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="id">Mã sinh viên:</label>
+                        <input
+                          required
+                          class="form-control"
+                          type="text"
+                          name="id"
+                          id="id"
+                          placeholder="VD: 23T1020573"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="class">Lớp:</label>
+                        <input
+                          required
+                          class="form-control"
+                          type="text"
+                          name="class"
+                          id="class"
+                          placeholder="VD: CNTT K47A"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="gender">Giới tính:</label>
+                        <input
+                          required
+                          class="form-control"
+                          type="text"
+                          name="gender"
+                          id="gender"
+                          placeholder="Nam/Nữ/Khác"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="year">Khóa:</label>
+                        <input
+                          required
+                          class="form-control"
+                          type="text"
+                          name="year"
+                          id="year"
+                          placeholder="VD: K47"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                          required
+                          class="form-control"
+                          type="email"
+                          name="email"
+                          id="email"
+                          placeholder="VD: 23t1020573@husc.edu.vn"
+                          autocomplete="email"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="number">Số điện thoại:</label>
+                        <input
+                          required
+                          class="form-control"
+                          type="text"
+                          name="number"
+                          id="number"
+                          placeholder="Nhập số điện thoại của bạn..."
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="facebook">Facebook:</label>
+                        <input
+                          type="text"
+                          required
+                          class="form-control"
+                          name="facebook"
+                          id="facebook"
+                          placeholder="Nhập tên facebook của bạn..."
+                        />
+                      </div>
+                    </div>
+                    <div class="control-area">
+                      <button type="reset">Xóa tất cả</button>
+                      <button class="swiper-button-next">Tiếp theo</button>
+                    </div>
+                  </div>
+
+                  <div class="second-form swiper-slide">
+                    <div class="information-type">
+                      <h4>Thông tin bổ sung</h4>
+                    </div>
+                    <div class="form-groups">
+                      <div class="form-group">
+                        <label for="gradeOne"
+                          >Điểm hệ 10 Nhập môn lập trình:</label
+                        >
+                        <input
+                          required
+                          class="form-control"
+                          type="text"
+                          name="gradeOne"
+                          id="gradeOne"
+                          placeholder="Đối với sinh viên năm 1, năm 2 và năm 3"
+                        />
+                      </div>
+                      <div class="form-group grade">
+                        <label for="gradeTwo"
+                          >Điểm hệ 10 Kĩ thuật lập trình:</label
+                        >
+                        <input
+                          required
+                          class="form-control"
+                          type="text"
+                          name="gradeTwo"
+                          id="gradeTwo"
+                          placeholder="Đối với sinh viên năm 2 và năm 3"
+                        />
+                      </div>
+                      <div class="form-group paragraph">
+                        <label for="wish">Nguyện vọng của bạn:</label>
+                        <textarea
+                          required
+                          class="form-control paragraph"
+                          type="text"
+                          name="wish"
+                          id="wish"
+                          placeholder="Hãy mô tả ngắn gọn về nguyện vọng của bạn trong khoảng 100 chữ"
+                        ></textarea>
+                      </div>
+                      <div class="form-group paragraph">
+                        <label for="strength">Điểm mạnh của bạn:</label>
+                        <textarea
+                          class="form-control paragraph"
+                          type="text"
+                          name="strength"
+                          id="strength"
+                          placeholder="Hãy mô tả ngắn gọn về điểm mạnh của bạn trong khoảng 100 chữ"
+                        ></textarea>
+                      </div>
+                      <div class="form-group checkbox">
+                        <p>
+                          Bạn có sẵn sàng đi trợ giảng cho các thầy cô không?
+                        </p>
+                        <div class="checkbox-input">
+                          <div class="radio-option">
+                            <input
+                              class="radio-input"
+                              type="radio"
+                              name="option"
+                              id="yes"
+                              value="Yes"
+                              required
+                            />
+                            <label for="yes">Có</label>
+                          </div>
+                          <div class="radio-option">
+                            <input
+                              class="radio-input"
+                              type="radio"
+                              name="option"
+                              id="no"
+                              value="No"
+                            />
+                            <label for="no">Không</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="control-area">
+                        <button type="reset">Xóa tất cả</button>
+                        <button type="submit" class="alert-trigger">Hoàn thành</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="../assets/js/form.js"></script>
+    <!-- End form -->
+
+    <!-- Start footer -->
+    <div class="footer-wrapper">
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-7 col-md-12">
+              <div class="footer-left">
+                <div class="row justify-content-lg-around">
+                  <div class="footer-contact inner-box col-sm-6">
+                    <div class="inner-wrap">
+                      <div class="inner-head">
+                        <img
+                          src="../assets/images/Footer/SPIT_Logo.png"
+                          alt=""
+                        />
+                        <p>
+                          TRƯỜNG ĐẠI HỌC KHOA HỌC, ĐẠI HỌC HUẾ
+                          <br />
+                          <b>CLB HỖ TRỢ LẬP TRÌNH</b>
+                        </p>
+                      </div>
+                      <div class="inner-body">
+                        <div class="contact-phone contact-box">
+                          <div class="icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                          </div>
+                          <p>0702291317 - 0934766830 - 0934094936</p>
+                        </div>
+                        <div class="contact-gmail contact-box">
+                          <div class="icon">
+                            <i class="fa-regular fa-envelope"></i>
+                          </div>
+                          <a href="mailto:clbhtlt.ithusc@gmail.com"
+                            >clbhtlt.ithusc@gmail.com</a
+                          >
+                        </div>
+                        <div class="contact-facbook contact-box">
+                          <div class="icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </div>
+                          <a
+                            href="https://www.facebook.com/clbhtlt.ithusc"
+                            target="_blank"
+                            rel=""
+                            >CLB Hỗ trợ Lập trình</a
+                          >
+                        </div>
+                        <div class="contact-address contact-box">
+                          <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                          </div>
+                          <p>Phòng E202, 77 Nguyễn Huệ, TP. Huế</p>
+                        </div>
+                      </div>
+                      <div class="footer-page-md inner-box col-sm-6 one">
+                        <div class="inner-head">
+                          <p>TUYỂN THÀNH VIÊN</p>
+                        </div>
+                        <div class="inner-body">
+                          <a href="#formWrapper" id="openForm">ĐĂNG KÝ</a><br />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer-organization inner-box col-sm-6">
+                    <div class="inner-wrap">
+                      <div class="inner-head">
+                        <p>TỔ CHỨC</p>
+                      </div>
+                      <div class="organization one">
+                        <img
+                          src="../assets/images/Footer/Hue_University-Logo.png"
+                          alt="Logo của Đại Học Huế"
+                        />
+                        <p>
+                          Đại học Huế
+                          <br />
+                          <a href="https://hueuni.edu.vn/" target="_blank"
+                            >Hue University</a
+                          >
+                        </p>
+                      </div>
+                      <br />
+                      <div class="organization two">
+                        <img
+                          src="../assets/images/Footer/HUSC_Hue_University-Logo.png"
+                          alt="Logo của Đại Học Khoa Học, Đại Học Huế"
+                        />
+                        <p>
+                          Đại học Khoa học Huế
+                          <br />
+                          <a href="https://husc.edu.vn/" target="_blank"
+                            >Hue University Of Sciences</a
+                          >
+                        </p>
+                      </div>
+                      <div class="footer-page-md inner-box col-sm-6 two">
+                        <div class="inner-head">
+                          <p>TRANG KHÁC</p>
+                        </div>
+                        <div class="inner-body">
+                          <a href="./introduce.html">GIỚI THIỆU</a><br />
+                          <a href="./activities.html">HOẠT ĐỘNG</a>
+                          <a href="./news.html">TIN TỨC, THÔNG BÁO</a>
+                          <a class="active" href="#">TUYỂN THÀNH VIÊN</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+              <div class="footer-right">
+                <div class="row justify-content-lg-around">
+                  <div class="footer-page inner-box col-sm-6">
+                    <div class="inner-wrap">
+                      <div class="inner-head">
+                        <p>TUYỂN THÀNH VIÊN</p>
+                      </div>
+                      <div class="inner-body">
+                        <a href="#formWrapper" id="openForm">ĐĂNG KÝ</a><br />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer-page inner-box col-sm-6">
+                    <div class="inner-wrap">
+                      <div class="inner-head">
+                        <p>TRANG KHÁC</p>
+                      </div>
+                      <div class="inner-body">
+                        <a href="./introduce.html">GIỚI THIỆU</a><br />
+                        <a href="./activities.html">HOẠT ĐỘNG</a><br />
+                        <a href="./news.html">TIN TỨC, THÔNG BÁO</a><br />
+                        <a href="#" class="active">TUYỂN THÀNH VIÊN</a><br />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="copy-right">
+        <p>&#64;2024 Design By CodeWaveTeam</p>
+      </div>
+    </div>
+    <!-- End footer -->
+
+    <!-- Start button components -->
+    <!-- Start button to top -->
+    <button
+      onclick="topFunction()"
+      class="top-button"
+      id="topButton"
+      title="Go to top"
+    >
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+    <!-- End button to top -->
+
+    <!-- Start button to bottom -->
+    <button
+      onclick="bottomFunction()"
+      class="bottom-button"
+      id="bottomButton"
+      title="Go to bottom"
+    >
+      <i class="fa-solid fa-angle-down"></i>
+    </button>
+    <!-- End button to bottom -->
+    <script src="../assets/js/button_components.js"></script>
+    <!-- End button components -->
+
+    <!-- Smooth scroll behavior -->
+    <script src="../assets/js/smooth_scroll-behavior.js"></script>
+    <!-- Smooth scroll behavior -->
+
+    <!-- Scroll load fix -->
+    <script src="../assets/js/scroll_load-fix.js"></script>
+    <!-- Scroll load fix -->
+
+    <!-- Interaction -->
+    <script src="../assets/js/interaction.js"></script>
+    <!-- Interaction -->
+  </body>
+
+  <!-- WOW js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!-- WOW js -->
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Bootstrap JS and dependencies -->
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- Swiper JS -->
+</html>

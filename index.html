@@ -1,1 +1,860 @@
-sdfsdfsdf
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Câu lạc bộ Hỗ trợ Lập trình (SPIT) được thành lập vào ngày 19/08/2023, là một cộng đồng dành cho những người đam mê lập trình và công nghệ. Mục tiêu của câu lạc bộ, như tên gọi, đó là hỗ trợ cho các bạn sinh viên đang gặp những vấn đề nan giải trong con đường học lập trình của mình, giúp nâng cao kĩ năng lập trình của các bạn sinh viên. Bởi 'Lập trình không khó vì có SPIT' là slogan của CLB. CLB là nơi giao lưu, học hỏi và chia sẻ những kinh nghiệm trong lập trình, giúp các thành viên nâng cao kĩ năng và kiến thức trong lĩnh vực công nghệ thông tin. Đồng thời, đây còn là một môi trường học tập lí tưởng, năng động và giúp đỡ, thúc đẩy các sinh viên có thể đạt những thành tích cao trong học tập cũng như là những cuộc thi về lập trình. Ngoài các hoạt động học thuật, CLB SPIT còn tổ chức các buổi giao lưu, team-building, các hoạt động ngoại khóa để tạo cơ hội cho các thành viên được kết nối và xây dựng mối quan hệ bền vững. Hơn nữa, CLB còn giúp các bạn nâng cao các kĩ năng làm việc cần thiết cho sinh viên như: làm việc nhóm, kĩ năng thuyết trình, kĩ năng tổ chức sự kiện, quản lí dự án, .... CLB còn có những hoạt động thường niên như là hoạt động học tập về lập trình, những môn liên quan đến lập trình tại phòng lab E202, Trường Đại học Khoa học - Đại học Huế vào mỗi chiều thứ 3 và thứ 6 hàng tuần. Và các hoạt động sự kiện tổ chức theo tuần, tháng như là các contest, cuộc thi về lập trình, cuộc thi về sáng tạo phần mềm, sinh nhật CLB, tổng kết cuối năm, ...."
+    />
+    <meta
+      name="keywords"
+      content="SPIT, SPIT HUSC, SPIT CLB, SPIT Club, SPIT IT"
+    />
+    <!-- Meta -->
+
+    <!-- Icon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/SPIT.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Icon -->
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+
+    <!-- Animate css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Animate css -->
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- My CSS -->
+
+    <title>SPIT Club - Trang Chủ</title>
+  </head>
+
+  <body>
+    <!-- Start menu -->
+    <div class="menu-wrapper">
+      <div class="menu">
+        <div class="menu-contain container-md">
+          <a href="/" class="menu-logo" id="menuLogo">
+            <img
+              src="./assets/images/Menu/SPIT_Logo.png"
+              alt="Logo của SPIT CLub"
+            />
+            <div class="menu-content">
+              <p class="menu-subtitle">TRƯỜNG ĐẠI HỌC KHOA HỌC, ĐẠI HỌC HUẾ</p>
+              <strong class="menu-title">CLB HỖ TRỢ LẬP TRÌNH</strong>
+            </div>
+          </a>
+          <nav class="navigation" id="navigation">
+            <div class="navigation-close">
+              <a href="/" class="navigation-logo">
+                <img
+                  src="./assets/images/Menu/SPIT_Logo.png"
+                  alt="Logo của SPIT CLub"
+                />
+              </a>
+              <i class="fa-solid fa-xmark hide-icon" id="hideNavigation"></i>
+            </div>
+            <a href="./pages/introduce.html" class="navigation-item"
+              >GIỚI THIỆU</a
+            >
+            <a href="./pages/activities.html" class="navigation-item"
+              >HOẠT ĐỘNG</a
+            >
+            <a href="./pages/news.html" class="navigation-item"
+              >TIN TỨC, THÔNG BÁO</a
+            >
+            <a href="./pages/recruitmember.html" class="navigation-item"
+              >TUYỂN THÀNH VIÊN</a
+            >
+          </nav>
+          <i
+            class="fa-solid fa-bars-staggered show-icon"
+            id="showNavigation"
+          ></i>
+        </div>
+        <div class="mask" id="navigationOverlay"></div>
+      </div>
+    </div>
+
+    <script src="./assets/js/navigation.js"></script>
+    <!-- End menu -->
+
+    <!-- Start header -->
+    <header class="header">
+      <div class="header-contain">
+        <div class="header-welcome">
+          <div class="container-md">
+            <div class="header-content">
+              <h1 class="header-title wow animate__tada" data-wow-duration="2s">
+                Hello World, We are SPIT!
+              </h1>
+              <div class="header-description">
+                <p>
+                  "SPIT" - Nơi chia sẻ kinh nghiệm học tập và tiếp cận công nghệ
+                  mới.
+                </p>
+                <p>
+                  <strong>Chào mừng</strong> các bạn trẻ có niềm đam mê với bộ
+                  môn lập trình!
+                </p>
+                <p>
+                  <strong
+                    >Feel hard? SPIT here to fix
+                    <i class="fa-solid fa-screwdriver-wrench"></i
+                  ></strong>
+                </p>
+              </div>
+              <a href="#overview" class="link-button explore-introduce">
+                <p>Khám phá ngay<i class="fa-solid fa-arrow-down"></i></p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header-decoration">
+          <img
+            src="./assets/images/index/Header/Technology_computer.png"
+            alt="Technology computer"
+            class="right"
+          />
+          <img
+            src="./assets/images/index/Header/SPIT_Leader.png"
+            alt="Leader của SPIT Club"
+            class="left"
+          />
+        </div>
+      </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Start overview -->
+    <section class="overview" id="overview">
+      <div class="container-md">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-6">
+            <div class="overview-image">
+              <img
+                src="./assets/images/index/Overview/Overview_shortcut.png"
+                alt=""
+                class="animate__animated animate__flipInX wow"
+                data-wow-duration="2s"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="overview-content">
+              <div class="content-header">
+                <h1 class="overview-title">GIỚI THIỆU</h1>
+                <h4 class="overview-subtitle">CLB HỖ TRỢ LẬP TRÌNH SPIT</h4>
+              </div>
+              <div class="content-footer">
+                <p class="overview-description text-justify">
+                  <strong>Câu lạc bộ Hỗ trợ lập trình (SPIT) </strong>trường Đại
+                  học Khoa học là tổ chức của sinh viên trường Đại học Khoa học
+                  có kết quả học tập các môn lập trình cao, trực thuộc Hội sinh
+                  viên trường và liên chi đoàn Khoa Công nghệ thông tin với
+                  phương châm hoạt động "Chia sẻ để cùng nhau phát triển". Câu
+                  lạc bộ là nơi giao lưu, đào tạo các môn lập trình và các môn
+                  học trong trường, tạo điều kiện để sinh viên có môi trường học
+                  tập năng động sáng tạo.
+                </p>
+                <p class="overview-slogan">
+                  <strong>Slogan: </strong>“Lập trình không khó, vì có SPIT”.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End overview -->
+
+    <!-- Start activities -->
+    <section class="activities" id="activities">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-6">
+            <div class="activities-content">
+              <div class="content-box">
+                <h3 class="content-title">HOẠT ĐỘNG</h3>
+              </div>
+              <div class="content-description text-justify">
+                <p>
+                  Là nơi giao lưu, trao đổi kinh nghiệm học tập các môn lập
+                  trình, góp phần thúc đẩy phong trào học lập trình của các sinh
+                  viên trong Khoa.
+                </p>
+                <p>
+                  SPIT tạo điều kiện để sinh viên có thể học tập một các năng
+                  động và sáng tạo, hỗ trợ sinh viên đạt thành tích cao trong
+                  học tập.
+                </p>
+                <p>
+                  Ngoài ra, các kỹ năng cần thiết như làm việc nhóm, thuyết
+                  trình, tổ chức sự kiện, quản lý nhân sự và quản lý dự án cũng
+                  được nâng cao cho sinh viên thông qua các hoạt động tại đây.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="activities-image text-center wow animate__animated animate__zoomIn">
+              <img
+                src="./assets/images/index/Activities/Activities_shortcut.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="activities-button">
+          <a href="./pages/activities.html" class="link-button watch-more">
+            <p>Xem thêm<i class="fa-brands fa-wpexplorer"></i></p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End activities -->
+
+    <!-- Start achievement -->
+    <section class="achievement" id="achievement">
+      <div class="container-md">
+        <div class="inner-head">
+          <h2 class="achievement-title">THÀNH TÍCH</h2>
+          <p class="achievement-description">
+            Câu lạc bộ SPIT tự hào với nhiều thành tích nổi bật trong các cuộc
+            thi lập trình, khẳng định được vị thế và tinh thần sáng tạo, học tập
+            không ngừng nghỉ của các thành viên.
+          </p>
+        </div>
+        <div class="inner-body">
+          <div
+            class="circle wow animate__animated animate__zoomIn"
+            data-wow-duration="0.5s"
+          ></div>
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <div
+                class="achievement-item wow animate__animated animate__fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.5s"
+              >
+                <img
+                  src="./assets/images/index/Achievement/ICPC_Central_Region.png"
+                  alt=""
+                />
+                <p>
+                  Đội tuyển Khoa Công nghệ thông tin đạt giải Nhất, Nhì cuộc thi
+                  ICPC khu vực Miền Trung năm 2023
+                </p>
+              </div>
+            </div>
+            <div class="col-6 hidden-responsive"></div>
+          </div>
+          <div
+            class="circle wow animate__animated animate__zoomIn"
+            data-wow-duration="0.5s"
+          ></div>
+          <div class="row">
+            <div class="col-6 hidden-responsive"></div>
+            <div class="col-md-6 col-12">
+              <div
+                class="achievement-item wow animate__animated animate__fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.5s"
+              >
+                <img
+                  src="./assets/images/index/Achievement/ICPC_Asian_Hue_City_2023.png"
+                  alt=""
+                />
+                <p>
+                  CLB Hỗ trợ Lập trình cùng với cuộc thi Olympic Tin học Sinh
+                  viên Việt Nam lần thứ 32 - Procon Vietnam - ICPC Asia Hue City
+                  2023
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="circle wow animate__animated animate__zoomIn"
+            data-wow-duration="0.5s"
+          ></div>
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <div
+                class="achievement-item wow animate__animated animate__fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.5s"
+              >
+                <img
+                  src="./assets/images/index/Achievement/Da_Nang_Code_League.png"
+                  alt=""
+                />
+                <p>
+                  Đội thi HUSC-Newbie đến từ CLB Hỗ trợ Lập trình đạt Huy chương
+                  Bạc (bảng Warrior) tại cuộc thi lập trình Da Nang Code League
+                  năm 2024
+                </p>
+              </div>
+            </div>
+            <div class="col-6 hidden-responsive"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End achievement -->
+
+    <!-- Start Q&A -->
+    <section class="question-answer" id="qa">
+      <div class="container-md">
+        <div class="row">
+          <div class="col-12">
+            <div class="inner-main">
+              <div class="qa-head">
+                <h2 class="qa-title">Q & A</h2>
+              </div>
+              <div class="inner-body">
+                <div class="accordion" id="accordionQA">
+                  <div class="card" data-wow-delay="0.1s">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          Học ngành khác có thể tham gia CLB không?
+                          <span class="icon"></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseOne"
+                      class="collapse"
+                      aria-labelledby="headingOne"
+                      data-parent="#accordionQA"
+                    >
+                      <div class="card-body">
+                        <i class="fa-regular fa-comment-dots"></i>Không, vì câu
+                        lạc bộ chỉ dành cho các bạn thuộc ngành Công nghệ thông
+                        tin.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" data-wow-delay="0.2s">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          Câu lạc bộ có hợp tác với các công ty hay tổ chức nào
+                          không?
+                          <span class="icon"></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseTwo"
+                      class="collapse"
+                      aria-labelledby="headingTwo"
+                      data-parent="#accordionQA"
+                    >
+                      <div class="card-body">
+                        <i class="fa-regular fa-comment-dots"></i>CLB có hợp tác
+                        với các công ty công nghệ ở Huế và Đà Nẵng điển hình như
+                        FPT Software.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" data-wow-delay="0.3s">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          Tại sao CLB chỉ tuyển sinh viên năm nhất?
+                          <span class="icon"></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseThree"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#accordionQA"
+                    >
+                      <div class="card-body">
+                        <i class="fa-regular fa-comment-dots"></i>Vì điều này
+                        giúp CLB xây dựng nền tảng vững chắc, duy trì nguồn nhân
+                        lực ổn định và phát triển lâu dài.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" data-wow-delay="0.4s">
+                    <div class="card-header" id="headingFour">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseFour"
+                          aria-expanded="false"
+                          aria-controls="collapseFour"
+                        >
+                          CLB ngoài dạy thuật toán còn dạy gì nữa không?
+                          <span class="icon"></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseFour"
+                      class="collapse"
+                      aria-labelledby="headingFour"
+                      data-parent="#accordionQA"
+                    >
+                      <div class="card-body">
+                        <i class="fa-regular fa-comment-dots"></i>Hướng dẫn làm
+                        dự án nghiên cứu khoa học và dạy cho bạn cách tiếp cận
+                        các công nghệ mới.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" data-wow-delay="0.5s">
+                    <div class="card-header" id="headingFive">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseFive"
+                          aria-expanded="false"
+                          aria-controls="collapseFive"
+                        >
+                          Nếu chưa có kiến thức về lập trình thì có thể tham gia
+                          CLB không?
+                          <span class="icon"></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseFive"
+                      class="collapse"
+                      aria-labelledby="headingFive"
+                      data-parent="#accordionQA"
+                    >
+                      <div class="card-body">
+                        <i class="fa-regular fa-comment-dots"></i>Bạn cần có các
+                        kiến thức cơ bản về lập trình để trở thành một thành
+                        viên của CLB.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" data-wow-delay="0.6s">
+                    <div class="card-header" id="headingSix">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseSix"
+                          aria-expanded="false"
+                          aria-controls="collapseSix"
+                        >
+                          Tham gia CLB ngoài học tập còn có hoạt động gì khác
+                          không?
+                          <span class="icon"></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseSix"
+                      class="collapse"
+                      aria-labelledby="headingSix"
+                      data-parent="#accordionQA"
+                    >
+                      <div class="card-body">
+                        <i class="fa-regular fa-comment-dots"></i>Các hoạt động
+                        ngoại khóa như seminar, camping hay teambuilding.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" data-wow-delay="0.7s">
+                    <div class="card-header" id="headingSeven">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseSeven"
+                          aria-expanded="false"
+                          aria-controls="collapseSeven"
+                        >
+                          Có được tham gia nhiều CLB không?
+                          <span class="icon"></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseSeven"
+                      class="collapse"
+                      aria-labelledby="headingSeven"
+                      data-parent="#accordionQA"
+                    >
+                      <div class="card-body">
+                        <i class="fa-regular fa-comment-dots"></i>Việc tham gia
+                        CLB sẽ giúp cho bạn học hỏi được nhiều kỹ năng mềm và
+                        tạo nhiều nền tảng kiến thức nên CLB khuyến khích bạn
+                        nên tham gia nhiều hoạt động và CLB hơn.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" data-wow-delay="0.8s">
+                    <div class="card-header" id="headingEight">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseEight"
+                          aria-expanded="false"
+                          aria-controls="collapseEight"
+                        >
+                          Hình thức tuyển thành viên CLB?
+                          <span class="icon"></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseEight"
+                      class="collapse"
+                      aria-labelledby="headingEight"
+                      data-parent="#accordionQA"
+                    >
+                      <div class="card-body">
+                        <i class="fa-regular fa-comment-dots"></i>Bạn sẽ đăng ký
+                        thông qua Form ở trang web chính thức của CLB, sau khi
+                        vượt qua vòng nộp hồ sơ sẽ là vòng kiểm tra và vòng
+                        phỏng vấn trực tiếp.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" data-wow-delay="0.9s">
+                    <div class="card-header" id="headingNine">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseNine"
+                          aria-expanded="false"
+                          aria-controls="collapseNine"
+                        >
+                          Nhận được quyền lợi gì khi tham gia vào CLB?
+                          <span class="icon"></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseNine"
+                      class="collapse"
+                      aria-labelledby="headingNine"
+                      data-parent="#accordionQA"
+                    >
+                      <div class="card-body">
+                        <i class="fa-regular fa-comment-dots"></i>Học hỏi kiến
+                        thức mới, thực hành kỹ năng lập trình, mở rộng mạng lưới
+                        quan hệ, cơ hội thực tập và việc làm.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" data-wow-delay="1s">
+                    <div class="card-header" id="headingTen">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseTen"
+                          aria-expanded="false"
+                          aria-controls="collapseTen"
+                        >
+                          Câu lạc bộ có các hoạt động gì?
+                          <span class="icon"></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseTen"
+                      class="collapse"
+                      aria-labelledby="headingTen"
+                      data-parent="#accordionQA"
+                    >
+                      <div class="card-body">
+                        <i class="fa-regular fa-comment-dots"></i>Các buổi
+                        workshop, seminar, hackathon, các dự án nhóm, buổi gặp
+                        mặt, các cuộc thi lập trình.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Start Q&A -->
+
+    <!-- Start footer -->
+    <div class="footer-wrapper">
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-7 col-md-12">
+              <div class="footer-left">
+                <div class="row justify-content-lg-around">
+                  <div class="footer-contact inner-box col-sm-6">
+                    <div class="inner-wrap">
+                      <div class="inner-head">
+                        <img
+                          src="./assets/images/Footer/SPIT_Logo.png"
+                          alt=""
+                        />
+                        <p>
+                          TRƯỜNG ĐẠI HỌC KHOA HỌC, ĐẠI HỌC HUẾ
+                          <br />
+                          <b>CLB HỖ TRỢ LẬP TRÌNH</b>
+                        </p>
+                      </div>
+                      <div class="inner-body">
+                        <div class="contact-phone contact-box">
+                          <div class="icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                          </div>
+                          <p>0702291317 - 0934766830 - 0934094936</p>
+                        </div>
+                        <div class="contact-gmail contact-box">
+                          <div class="icon">
+                            <i class="fa-regular fa-envelope"></i>
+                          </div>
+                          <a href="mailto:clbhtlt.ithusc@gmail.com"
+                            >clbhtlt.ithusc@gmail.com</a
+                          >
+                        </div>
+                        <div class="contact-facbook contact-box">
+                          <div class="icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </div>
+                          <a
+                            href="https://www.facebook.com/clbhtlt.ithusc"
+                            target="_blank"
+                            rel=""
+                            >CLB Hỗ trợ Lập trình</a
+                          >
+                        </div>
+                        <div class="contact-address contact-box">
+                          <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                          </div>
+                          <p>Phòng E202, 77 Nguyễn Huệ, TP. Huế</p>
+                        </div>
+                      </div>
+                      <div class="footer-page-md inner-box col-sm-6 one">
+                        <div class="inner-head">
+                          <p>TRANG CHỦ</p>
+                        </div>
+                        <div class="inner-body">
+                          <a href="#overview">TỔNG QUAN</a><br />
+                          <a href="#activities">HOẠT ĐỘNG</a><br />
+                          <a href="#achievement">THÀNH TÍCH</a><br />
+                          <a href="#qa">Q & A</a><br />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer-organization inner-box col-sm-6">
+                    <div class="inner-wrap">
+                      <div class="inner-head">
+                        <p>TỔ CHỨC</p>
+                      </div>
+                      <div class="organization one">
+                        <img
+                          src="./assets/images/Footer/Hue_University-Logo.png"
+                          alt="Logo của Đại Học Huế"
+                        />
+                        <p>
+                          Đại học Huế
+                          <br />
+                          <a href="https://hueuni.edu.vn/" target="_blank"
+                            >Hue University</a
+                          >
+                        </p>
+                      </div>
+                      <br />
+                      <div class="organization two">
+                        <img
+                          src="./assets/images/Footer/HUSC_Hue_University-Logo.png"
+                          alt="Logo của Đại Học Khoa Học, Đại Học Huế"
+                        />
+                        <p>
+                          Đại học Khoa học Huế
+                          <br />
+                          <a href="https://husc.edu.vn/" target="_blank"
+                            >Hue University Of Sciences</a
+                          >
+                        </p>
+                      </div>
+                      <div class="footer-page-md inner-box col-sm-6 two">
+                        <div class="inner-head">
+                          <p>TRANG KHÁC</p>
+                        </div>
+                        <div class="inner-body">
+                          <a href="./pages/introduce.html">GIỚI THIỆU</a><br />
+                          <a href="./pages/activities.html">HOẠT ĐỘNG</a>
+                          <a href="./pages/news.html">TIN TỨC, THÔNG BÁO</a>
+                          <a href="./pages/recruitmember.html"
+                            >TUYỂN THÀNH VIÊN</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+              <div class="footer-right">
+                <div class="row justify-content-lg-around">
+                  <div class="footer-page inner-box col-sm-6">
+                    <div class="inner-wrap">
+                      <div class="inner-head">
+                        <p>TRANG CHỦ</p>
+                      </div>
+                      <div class="inner-body">
+                        <a href="#overview">TỔNG QUAN</a><br />
+                        <a href="#activities">HOẠT ĐỘNG</a><br />
+                        <a href="#achievement">THÀNH TÍCH</a><br />
+                        <a href="#qa">Q & A</a><br />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer-page inner-box col-sm-6">
+                    <div class="inner-wrap">
+                      <div class="inner-head">
+                        <p>TRANG KHÁC</p>
+                      </div>
+                      <div class="inner-body">
+                        <a href="./pages/introduce.html">GIỚI THIỆU</a><br />
+                        <a href="./pages/activities.html">HOẠT ĐỘNG</a><br />
+                        <a href="./pages/news.html">TIN TỨC, THÔNG BÁO</a><br />
+                        <a href="./pages/recruitmember.html">TUYỂN THÀNH VIÊN</a
+                        ><br />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="copy-right">
+        <p>&#64;2024 Design By CodeWaveTeam</p>
+      </div>
+    </div>
+    <!-- End footer -->
+
+    <!-- Start button components -->
+    <!-- Start button to top -->
+    <button
+      onclick="topFunction()"
+      class="top-button"
+      id="topButton"
+      title="Go to top"
+    >
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+    <!-- End button to top -->
+
+    <!-- Start button to bottom -->
+    <button
+      onclick="bottomFunction()"
+      class="bottom-button"
+      id="bottomButton"
+      title="Go to bottom"
+    >
+      <i class="fa-solid fa-angle-down"></i>
+    </button>
+    <!-- End button to bottom -->
+    <script src="./assets/js/button_components.js"></script>
+    <!-- End button components -->
+
+    <!-- Smooth scroll behavior -->
+    <script src="./assets/js/smooth_scroll-behavior.js"></script>
+    <!-- Smooth scroll behavior -->
+
+    <!-- Scroll load fix -->
+    <script src="./assets/js/scroll_load-fix.js"></script>
+    <!-- Scroll load fix -->
+
+    <!-- Interaction -->
+    <script src="./assets/js/interaction.js"></script>
+    <!-- Interaction -->
+  </body>
+
+  <!-- WOW js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!-- WOW js -->
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Bootstrap JS and dependencies -->
+</html>
