@@ -1,6 +1,5 @@
 body {
-  height: fit-content;
-  overflow: hidden;
+  overflow: auto;
 }
 
 /* Start header */
