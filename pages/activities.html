@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta -->
+
+    <!-- Icon -->
+    <link
+      rel="shortcut icon"
+      href="../assets/images/SPIT.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Icon -->
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- Swiper CSS -->
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+
+    <!-- Animate css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Animate css -->
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/pages/activities.css" />
+    <!-- My CSS -->
+
+    <title>SPIT Club - Hoạt Động</title>
+  </head>
+  <body>
+    <!-- Start menu -->
+    <div class="menu-wrapper">
+      <div class="menu">
+        <div class="menu-contain container-md">
+          <a href="/" class="menu-logo" id="menuLogo">
+            <img
+              src="../assets/images/Menu/SPIT_Logo.png"
+              alt="Logo của SPIT CLub"
+            />
+            <div class="menu-content">
+              <p class="menu-subtitle">TRƯỜNG ĐẠI HỌC KHOA HỌC, ĐẠI HỌC HUẾ</p>
+              <strong class="menu-title">CLB HỖ TRỢ LẬP TRÌNH</strong>
+            </div>
+          </a>
+          <nav class="navigation" id="navigation">
+            <div class="navigation-close">
+              <a href="/" class="navigation-logo">
+                <img
+                  src="../assets/images/Menu/SPIT_Logo.png"
+                  alt="Logo của SPIT CLub"
+                />
+              </a>
+              <i class="fa-solid fa-xmark hide-icon" id="hideNavigation"></i>
+            </div>
+            <a href="./introduce.html" class="navigation-item">GIỚI THIỆU</a>
+            <a href="#" class="navigation-item active">HOẠT ĐỘNG</a>
+            <a href="./news.html" class="navigation-item">TIN TỨC, THÔNG BÁO</a>
+            <a href="./recruitmember.html" class="navigation-item"
+              >TUYỂN THÀNH VIÊN</a
+            >
+          </nav>
+          <i
+            class="fa-solid fa-bars-staggered show-icon"
+            id="showNavigation"
+          ></i>
+        </div>
+        <div class="mask" id="navigationOverlay"></div>
+      </div>
+    </div>
+
+    <script src="../assets/js/navigation.js"></script>
+    <!-- End menu -->
+
+    <!-- Start header -->
+    <header class="header">
+      <div class="container-md">
+        <div class="header-content wow animate__animated animate__jackInTheBox">
+          <h1 class="header-title">Hoạt động</h1>
+          <p class="header-description">
+            Các hoạt động và sự kiện được diễn ra...
+            <br />
+            SPIT hướng đến việc cùng kết nối và phát triển giữa những người cùng
+            chung đam mê, sở thích!
+          </p>
+        </div>
+      </div>
+      <div class="slide-button">
+        <span id="previous"><i class="fa-solid fa-angle-left"></i></span>
+        <span id="next"><i class="fa-solid fa-angle-right"></i></span>
+        <ul>
+          <li class="button-active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="header-background">
+        <div class="background-slide">
+          <div class="slide active">
+            <img
+              src="../assets/images/pages/activities/Header/BackgroundOne.png"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../assets/images/pages/activities/Header/BackgroundTwo.png"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../assets/images/pages/activities/Header/BackgroundThree.png"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../assets/images/pages/activities/Header/BackgroundFour.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <script src="../assets/js/header-slide.js"></script>
+    </header>
+    <!-- End header -->
+
+    <!-- Start main activities -->
+    <section class="main-activities clearfix" id="main-activities">
+      <h2 class="activities-title">CÁC HOẠT ĐỘNG CHÍNH</h2>
+      <div class="box-wrapper wow animate__animated animate__fadeInLeftBig">
+        <div class="activities-box wow animate__animated animate__fadeIn">
+          <div class="row align-items-center justify-content-around">
+            <div class="box-content wow animate__animated">
+              <h4 class="box-title">CÁC BUỔI TỰ HỌC</h4>
+              <p class="box-description">
+                SPIT có các buổi tự học vào 14h - 17h30 các chiều thứ 3 và thứ 6
+                hàng tuần tại phòng E202 - Lab doanh nghiệp Khoa Công nghệ thông
+                tin.
+              </p>
+            </div>
+            <div class="box-image">
+              <img
+                class="wow animate__animated"
+                src="../assets/images/pages/activities/Main/Main_One.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="box-wrapper difference wow animate__animated animate__fadeInRightBig"
+      >
+        <div class="activities-box wow animate__animated animate__fadeIn">
+          <div class="row align-items-center justify-content-around">
+            <div class="box-image">
+              <img
+                class="wow animate__animated"
+                src="../assets/images/pages/activities/Main/Main_Two.png"
+                alt=""
+              />
+            </div>
+            <div class="box-content wow animate__animated">
+              <h4 class="box-title">TRỢ GIẢNG</h4>
+              <p class="box-description">
+                SPIT có các hoạt động trợ giảng, hỗ trợ sinh viên trong việc ôn
+                tập và giải đáp thắc mắc về các chủ đề đã học. Thực hành các bài
+                tập, dự án nhỏ, nâng cao kỹ năng lập trình.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box-wrapper wow animate__animated animate__fadeInLeftBig">
+        <div class="activities-box wow animate__animated animate__fadeIn">
+          <div class="row align-items-center justify-content-around">
+            <div class="box-content wow animate__animated">
+              <h4 class="box-title">SEMINAR</h4>
+              <p class="box-description">
+                SPIT có các buổi hội thảo về các chủ đề chuyên môn, công nghệ
+                mới. Qua đó nhằm tương tác, hỏi đáp với diễn giả và các thành
+                viên tham gia.
+              </p>
+            </div>
+            <div class="box-image">
+              <img
+                class="wow animate__animated"
+                src="../assets/images/pages/activities/Main/Main_Three.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box-wrapper wow animate__animated animate__fadeInRightBig">
+        <div class="activities-box wow animate__animated animate__fadeIn">
+          <div class="row align-items-center justify-content-around">
+            <div class="box-image">
+              <img
+                class="wow animate__animated"
+                src="../assets/images/pages/activities/Main/Main_Four.png"
+                alt=""
+              />
+            </div>
+            <div class="box-content wow animate__animated">
+              <h4 class="box-title">CONTEST</h4>
+              <p class="box-description">
+                Ngoài ra, SPIT còn tổ chức các cuộc thi để các bạn rèn luyện kỹ
+                năng lập trình.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="../assets/js/change_animation.js"></script>
+    </section>
+    <!-- End main activities -->
+
+    <!-- Start schedule -->
+    <section class="schedule" id="schedule">
+      <div class="container">
+        <div class="inner-head">
+          <h2 class="schedule-title">LỊCH TRÌNH HOẠT ĐỘNG CỦA CLB</h2>
+        </div>
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-md-11 col-sm-12 col-12 one">
+            <p class="schedule-description">
+              CLB Hỗ trợ Lập trình Trường Đại học Khoa học Huế, được biết với
+              tên gọi
+              <span style="color: #0039ca"
+                >Support Programming Information Technology</span
+              >, viết tắt là SPIT, được thành lập vào ngày 19/08/2023 dưới sự
+              chỉ đạo của Hội Sinh viên trường và ban cố vấn thuộc Khoa Công
+              nghệ thông tin Trường Đại học Khoa học, Đại học Huế. <br />
+              Đến nay, CLB đã tổ chức được nhiều hoạt động với sự góp mặt và hỗ
+              trợ từ rất nhiều thành viên, thầy cô cố vấn. Hãy cùng đồng hành và
+              theo bước sự phát triển của CLB chúng tôi nhé!
+            </p>
+          </div>
+          <div class="col-xl-6 col-lg-7 col-md-8 col-sm-9 col-12 two">
+            <div class="schedule-main swiper-container">
+              <div class="swiper-wrapper">
+                <div class="inner-wrapper swiper-slide">
+                  <h4 class="inner-month">-- 10/2023 --</h4>
+                  <div class="inner-image">
+                    <img
+                      src="../assets/images/pages/activities/Schedule/SeminarOne.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="inner-content">
+                    <h5 class="inner-title">
+                      SEMINAR “APPROACH TO PROGRAMMING"
+                    </h5>
+                    <p class="inner-description">
+                      Tại sự kiện, sinh viên được giới thiệu về CLB và chia sẻ
+                      các kiến thức lập trình cơ bản, cùng hướng dẫn format
+                      code, sử dụng trang web Coder để ôn luyện, và khắc phục
+                      lỗi nộp bài.
+                    </p>
+                  </div>
+                </div>
+                <div class="inner-wrapper swiper-slide">
+                  <h4 class="inner-month">-- 03/2024 --</h4>
+                  <div class="inner-image">
+                    <img
+                      src="../assets/images/pages/activities/Schedule/SeminarTwo.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="inner-content">
+                    <h5 class="inner-title">
+                      SEMINAR “KNOWLEDGE, SKILLS AND APPLICATIONS”
+                    </h5>
+                    <p class="inner-description">
+                      Buổi seminar đã trình bày về hai chủ đề: “Kỹ năng tiếp cận
+                      và giải quyết các bài toán lập trình” và “Tầm quan trọng
+                      của AI trong thời đại công nghệ số - Tầm nhìn tương lai
+                      đối với AI - Sinh viên và cách sử dụng AI trong việc học
+                      tập - Định hướng cho sinh viên trong ngành Khoa học máy
+                      tính”, mang đến nhiều thông tin quý giá dành cho các bạn
+                      sinh viên.
+                    </p>
+                  </div>
+                </div>
+                <div class="inner-wrapper swiper-slide">
+                  <h4 class="inner-month">-- 03/2024 --</h4>
+                  <div class="inner-image">
+                    <img
+                      src="../assets/images/pages/activities/Schedule/Outlock.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="inner-content">
+                    <h5 class="inner-title">
+                      NGOẠI KHÓA CỦA CLB HỖ TRỢ LẬP TRÌNH
+                    </h5>
+                    <p class="inner-description">
+                      Ngày 24/03/2024 đã là một ngày picnic đầy ắp niềm vui tại
+                      biển Hải Dương, bởi buổi teambuilding do CLB Hỗ trợ Lập
+                      trình tổ chức. Trong buổi teambuilding này, các thành viên
+                      CLB đã có cơ hội gần gũi với nhau hơn, cùng chơi các trò
+                      chơi có tính đồng đội cao và cùng nhau tạo nên thật nhiều
+                      kỷ niệm đáng nhớ.
+                    </p>
+                  </div>
+                </div>
+                <div class="inner-wrapper swiper-slide">
+                  <h4 class="inner-month">-- 07/2024 --</h4>
+                  <div class="inner-image">
+                    <img
+                      src="../assets/images/pages/activities/Schedule/SPIT_Front-End.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="inner-content">
+                    <h5 class="inner-title">CUỘC THI “SPIT FRONT END”</h5>
+                    <p class="inner-description">
+                      Nhằm mục đích tạo ra một sân chơi sáng tạo và phát huy
+                      tinh thần tự học, tìm hiểu của các bạn trong CLB Hỗ trợ
+                      Lập trình (SPIT), từ đó tìm ra được bài thi sử dụng làm
+                      trang web của CLB sau này, Ban Chủ nhiệm CLB SPIT Khóa 1
+                      tổ chức cuộc thi “SPIT Front End” lần thứ nhất”.
+                    </p>
+                  </div>
+                </div>
+                <div class="inner-wrapper swiper-slide">
+                  <h4 class="inner-month">-- 08/2024 --</h4>
+                  <div class="inner-image">
+                    <img
+                      src="../assets/images/pages/activities/Schedule/SPIT_birthday-One.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="inner-content">
+                    <h5 class="inner-title">Sinh nhật CLB SPIT tròn 1 tuổi</h5>
+                    <p class="inner-description">
+                      CLB Hỗ trợ Lập trình chính thức tròn 1 năm hoạt động. Đánh
+                      dấu cột mốc quan trọng này, chúng ta không chỉ kỷ niệm một
+                      năm đầy ấn tượng mà còn nhìn lại một hành trình đầy nhiệt
+                      huyết và thành tựu.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="left-button swiper-button-prev"></div>
+              <div class="right-button swiper-button-next"></div>
+              <img
+                class="schedule-background"
+                src="../assets/images/pages/activities/Schedule/Schedule.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="../assets/js/schedule-slide.js"></script>
+    </section>
+
+    <!-- End schedule -->
+
+    <!-- Start feedback -->
+    <section class="feedback" id="feedback">
+      <div
+        class="feedback-say wow animate__animated animate__rubberBand"
+        data-wow-duration="2s"
+      >
+        <i class="fa-solid fa-comment">
+          <p>HỌ ĐÃ NÓI GÌ VỀ SPIT?</p>
+        </i>
+      </div>
+      <div class="container-md">
+        <div class="feedback-content">
+          <h2 class="feedback-title">CẢM NHẬN TỪ NHỮNG NGƯỜI THAM GIA</h2>
+          <p class="feedback-description">
+            “SPIT luôn trân trọng và mong muốn nhận được những lời góp ý chân
+            thành từ tất cả mọi người. Những ý kiến đóng góp quý báu của các bạn
+            sẽ là động lực và nền tảng để chúng tôi không ngừng hoàn thiện, phát
+            triển, và mang lại những giá trị tốt đẹp hơn cho cộng đồng. Chúng ta
+            sẽ cùng nhau xây dựng một môi trường học tập và sáng tạo ngày càng
+            vững mạnh, đột phá và đổi mới.”
+          </p>
+        </div>
+        <div class="feedback-boxes">
+          <div
+            class="feedback-box wow animate__animated animate__bounceInUp"
+            data-wow-duration="1s"
+          >
+            <div class="box-wrapper">
+              <div class="box-say">
+                <img
+                  src="../assets/images/pages/activities/Feedback/Say.png"
+                  alt=""
+                />
+              </div>
+              <p class="box-content wow animate__animated">
+                Mình rất ấn tượng với sự nhiệt tình và hỗ trợ mà CLB SPIT mang
+                lại. Các thành viên luôn sẵn sàng giúp đỡ khi mình gặp khó khăn.
+              </p>
+              <div class="box-customer">
+                <div class="row align-items-center">
+                  <div class="customer-image">
+                    <img
+                      src="../assets/images/pages/activities/Feedback/Ngo_Quang_Truong.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="customer-content">
+                    <h5 class="customer-name">Quang Trường</h5>
+                    <p class="customer-position">SV CNTT K47J</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="feedback-box wow animate__animated animate__bounceInUp"
+            data-wow-duration="1s"
+          >
+            <div class="box-wrapper">
+              <div class="box-say">
+                <img
+                  src="../assets/images/pages/activities/Feedback/Say.png"
+                  alt=""
+                />
+              </div>
+              <p class="box-content wow animate__animated">
+                SPIT đã tạo ra một môi trường học tập rất tích cực và đầy cảm
+                hứng. Mình đã học hỏi được rất nhiều kiến thức bổ ích.
+              </p>
+              <div class="box-customer">
+                <div class="row align-items-center">
+                  <div class="customer-image">
+                    <img
+                      src="../assets/images/pages/activities/Feedback/Tran_Thi_Khanh_Linh.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="customer-content">
+                    <h5 class="customer-name">Khánh Linh</h5>
+                    <p class="customer-position">SV CNTT K47A</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="feedback-box wow animate__animated animate__bounceInUp"
+            data-wow-duration="1s"
+          >
+            <div class="box-wrapper">
+              <div class="box-say">
+                <img
+                  src="../assets/images/pages/activities/Feedback/Say.png"
+                  alt=""
+                />
+              </div>
+              <p class="box-content wow animate__animated">
+                CLB SPIT đã giúp mình nâng cao kỹ năng lập trình một cách rõ
+                rệt. Mình đã học hỏi và áp dụng được rất nhiều kiến thức bổ ích.
+              </p>
+              <div class="box-customer">
+                <div class="row align-items-center">
+                  <div class="customer-image">
+                    <img
+                      src="../assets/images/pages/activities/Feedback/Doan_Ngoc_Tran_Chau.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="customer-content">
+                    <h5 class="customer-name">Trân Châu</h5>
+                    <p class="customer-position">SV CNTT K47A</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="feedback-box wow animate__animated animate__bounceInUp"
+            data-wow-duration="1s"
+          >
+            <div class="box-wrapper">
+              <div class="box-say">
+                <img
+                  src="../assets/images/pages/activities/Feedback/Say.png"
+                  alt=""
+                />
+              </div>
+              <p class="box-content wow animate__animated">
+                Mình đã được học hỏi, chia sẻ kinh nghiệm và cùng nhau phát
+                triển. CLB thực sự là một ngôi nhà thứ hai đối với mình.
+              </p>
+              <div class="box-customer">
+                <div class="row align-items-center">
+                  <div class="customer-image">
+                    <img
+                      src="../assets/images/pages/activities/Feedback/Ngo_Le_Nam_Quyen.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="customer-content">
+                    <h5 class="customer-name">Nam Quyền</h5>
+                    <p class="customer-position">SV CNTT K47H</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-form">
+          <a
+            class="form-wrapper wow animate__animated animate__fadeInUp"
+            href="https://forms.gle/K9k9Xq9Z3Q4LbMAJA"
+            target="_blank"
+          >
+            <i class="fa-solid fa-inbox"></i>
+            <p>FORM FEEDBACK</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End feedback -->
+
+    <!-- Start footer -->
+    <div class="footer-wrapper">
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-7 col-md-12">
+              <div class="footer-left">
+                <div class="row justify-content-lg-around">
+                  <div class="footer-contact inner-box col-sm-6">
+                    <div class="inner-wrap">
+                      <div class="inner-head">
+                        <img
+                          src="../assets/images/Footer/SPIT_Logo.png"
+                          alt=""
+                        />
+                        <p>
+                          TRƯỜNG ĐẠI HỌC KHOA HỌC, ĐẠI HỌC HUẾ
+                          <br />
+                          <b>CLB HỖ TRỢ LẬP TRÌNH</b>
+                        </p>
+                      </div>
+                      <div class="inner-body">
+                        <div class="contact-phone contact-box">
+                          <div class="icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                          </div>
+                          <p>0702291317 - 0934766830 - 0934094936</p>
+                        </div>
+                        <div class="contact-gmail contact-box">
+                          <div class="icon">
+                            <i class="fa-regular fa-envelope"></i>
+                          </div>
+                          <a href="mailto:clbhtlt.ithusc@gmail.com"
+                            >clbhtlt.ithusc@gmail.com</a
+                          >
+                        </div>
+                        <div class="contact-facbook contact-box">
+                          <div class="icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </div>
+                          <a
+                            href="https://www.facebook.com/clbhtlt.ithusc"
+                            target="_blank"
+                            rel=""
+                            >CLB Hỗ trợ Lập trình</a
+                          >
+                        </div>
+                        <div class="contact-address contact-box">
+                          <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                          </div>
+                          <p>Phòng E202, 77 Nguyễn Huệ, TP. Huế</p>
+                        </div>
+                      </div>
+                      <div class="footer-page-md inner-box col-sm-6 one">
+                        <div class="inner-head">
+                          <p>HOẠT ĐỘNG</p>
+                        </div>
+                        <div class="inner-body">
+                          <a href="#main-activities">HOẠT ĐỘNG</a><br />
+                          <a href="#schedule">LỊCH TRÌNH</a><br />
+                          <a href="#feedback">CẢM NHẬN</a><br />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer-organization inner-box col-sm-6">
+                    <div class="inner-wrap">
+                      <div class="inner-head">
+                        <p>TỔ CHỨC</p>
+                      </div>
+                      <div class="organization one">
+                        <img
+                          src="../assets/images/Footer/Hue_University-Logo.png"
+                          alt="Logo của Đại Học Huế"
+                        />
+                        <p>
+                          Đại học Huế
+                          <br />
+                          <a href="https://hueuni.edu.vn/" target="_blank"
+                            >Hue University</a
+                          >
+                        </p>
+                      </div>
+                      <br />
+                      <div class="organization two">
+                        <img
+                          src="../assets/images/Footer/HUSC_Hue_University-Logo.png"
+                          alt="Logo của Đại Học Khoa Học, Đại Học Huế"
+                        />
+                        <p>
+                          Đại học Khoa học Huế
+                          <br />
+                          <a href="https://husc.edu.vn/" target="_blank"
+                            >Hue University Of Sciences</a
+                          >
+                        </p>
+                      </div>
+                      <div class="footer-page-md inner-box col-sm-6 two">
+                        <div class="inner-head">
+                          <p>TRANG KHÁC</p>
+                        </div>
+                        <div class="inner-body">
+                          <a href="./introduce.html">GIỚI THIỆU</a><br />
+                          <a class="active" href="#">HOẠT ĐỘNG</a>
+                          <a href="./news.html">TIN TỨC, THÔNG BÁO</a>
+                          <a href="./recruitmember.html">TUYỂN THÀNH VIÊN</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+              <div class="footer-right">
+                <div class="row justify-content-lg-around">
+                  <div class="footer-page inner-box col-sm-6">
+                    <div class="inner-wrap">
+                      <div class="inner-head">
+                        <p>HOẠT ĐỘNG</p>
+                      </div>
+                      <div class="inner-body">
+                        <a href="#main-activities">HOẠT ĐỘNG</a><br />
+                        <a href="#schedule">LỊCH TRÌNH</a><br />
+                        <a href="#feedback">CẢM NHẬN</a><br />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer-page inner-box col-sm-6">
+                    <div class="inner-wrap">
+                      <div class="inner-head">
+                        <p>TRANG KHÁC</p>
+                      </div>
+                      <div class="inner-body">
+                        <a href="./introduce.html">GIỚI THIỆU</a><br />
+                        <a class="active" href="#">HOẠT ĐỘNG</a><br />
+                        <a href="./news.html">TIN TỨC, THÔNG BÁO</a><br />
+                        <a href="./recruitmember.html">TUYỂN THÀNH VIÊN</a
+                        ><br />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="copy-right">
+        <p>&#64;2024 Design By CodeWaveTeam</p>
+      </div>
+    </div>
+    <!-- End footer -->
+
+    <!-- Start button components -->
+    <!-- Start button to top -->
+    <button
+      onclick="topFunction()"
+      class="top-button"
+      id="topButton"
+      title="Go to top"
+    >
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+    <!-- End button to top -->
+
+    <!-- Start button to bottom -->
+    <button
+      onclick="bottomFunction()"
+      class="bottom-button"
+      id="bottomButton"
+      title="Go to bottom"
+    >
+      <i class="fa-solid fa-angle-down"></i>
+    </button>
+    <!-- End button to bottom -->
+    <script src="../assets/js/button_components.js"></script>
+    <!-- End button components -->
+
+    <!-- Smooth scroll behavior -->
+    <script src="../assets/js/smooth_scroll-behavior.js"></script>
+    <!-- Smooth scroll behavior -->
+
+    <!-- Scroll load fix -->
+    <script src="../assets/js/scroll_load-fix.js"></script>
+    <!-- Scroll load fix -->
+
+    <!-- Interaction -->
+    <script src="../assets/js/interaction.js"></script>
+    <!-- Interaction -->
+  </body>
+
+  <!-- WOW js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!-- WOW js -->
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- Swiper JS -->
+</html>

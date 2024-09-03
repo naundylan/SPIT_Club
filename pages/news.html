@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta -->
+
+    <!-- Icon -->
+    <link
+      rel="shortcut icon"
+      href="../assets/images/SPIT.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Icon -->
+
+    <!-- Pagination CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/paginationjs@2/dist/pagination.css"
+    />
+    <!-- Pagination CSS -->
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+
+    <!-- Animate css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Animate css -->
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/pages/news.css" />
+    <!-- My CSS -->
+
+    <title>SPIT Club - Tin tức, thông báo</title>
+  </head>
+  <body>
+    <!-- Start video pops up -->
+    <div class="video-popsup">
+      <video controls playsinline>
+        <source
+          src="../assets/videos/pages/news/Header/SPIT_Club.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="inner-close"><i class="fa-solid fa-xmark"></i></div>
+    </div>
+    <!-- End video pops up -->
+
+    <!-- Start menu -->
+    <div class="menu-wrapper">
+      <div class="menu">
+        <div class="menu-contain container-md">
+          <a href="/" class="menu-logo" id="menuLogo">
+            <img
+              src="../assets/images/Menu/SPIT_Logo.png"
+              alt="Logo của SPIT CLub"
+            />
+            <div class="menu-content">
+              <p class="menu-subtitle">TRƯỜNG ĐẠI HỌC KHOA HỌC, ĐẠI HỌC HUẾ</p>
+              <strong class="menu-title">CLB HỖ TRỢ LẬP TRÌNH</strong>
+            </div>
+          </a>
+          <nav class="navigation" id="navigation">
+            <div class="navigation-close">
+              <a href="/" class="navigation-logo">
+                <img
+                  src="../assets/images/Menu/SPIT_Logo.png"
+                  alt="Logo của SPIT CLub"
+                />
+              </a>
+              <i class="fa-solid fa-xmark hide-icon" id="hideNavigation"></i>
+            </div>
+            <a href="./introduce.html" class="navigation-item">GIỚI THIỆU</a>
+            <a href="./activities.html" class="navigation-item">HOẠT ĐỘNG</a>
+            <a href="#" class="navigation-item active">TIN TỨC, THÔNG BÁO</a>
+            <a href="./recruitmember.html" class="navigation-item"
+              >TUYỂN THÀNH VIÊN</a
+            >
+          </nav>
+          <i
+            class="fa-solid fa-bars-staggered show-icon"
+            id="showNavigation"
+          ></i>
+        </div>
+        <div class="mask" id="navigationOverlay"></div>
+      </div>
+    </div>
+
+    <script src="../assets/js/navigation.js"></script>
+    <!-- End menu -->
+
+    <!-- Start header -->
+    <header class="header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="header-content">
+              <div class="header-title">
+                <h2 class="header-news">Tin tức</h2>
+                <h1 class="header-information">Thông báo</h1>
+              </div>
+              <p class="header-description">
+                Nơi <span style="color: #ffb900">cập nhật </span>những tin tức,
+                thông báo và các sự kiện quan trọng của CLB.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="header-video">
+              <img
+                src="../assets/images/pages/news/Header/In_playing.png"
+                alt=""
+              />
+              <video
+                playsinline
+                loop
+                autoplay
+                muted
+                poster="../assets/images/pages/news/Header/SPIT_Club.png"
+              >
+                <source
+                  src="../assets/videos/pages/news/Header/SPIT_Club.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div class="inner-play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="header-icons">
+              <div class="inner-wrapper scroll-icons">
+                <div class="inner-icon">
+                  <i class="fa-brands fa-android"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-angular"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-bootstrap"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-docker"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-java"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-js"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-node-js"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-php"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-python"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-react"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-git-alt"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-erlang"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-vuejs"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-swift"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-ember"></i>
+                </div>
+
+                <div class="inner-icon">
+                  <i class="fa-brands fa-android"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-angular"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-bootstrap"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-docker"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-java"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-js"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-node-js"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-php"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-python"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-react"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-git-alt"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-erlang"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-vuejs"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-swift"></i>
+                </div>
+                <div class="inner-icon">
+                  <i class="fa-brands fa-ember"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="../assets/js/news-header.js"></script>
+    </header>
+    <!-- End header -->
+
+    <!-- Star news -->
+    <section class="news" id="news">
+      <div class="container-sm">
+        <div class="col-12">
+          <div class="news-search">
+            <div class="search-wrapper form-group">
+              <label for="searchInput"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></label>
+              <input
+                id="searchInput"
+                type="text"
+                class="search-input form-control"
+                placeholder="Tìm kiếm tin tức, thông báo ..."
+              />
+              <i class="fa-solid fa-filter"></i>
+              <div class="filter-dropdown">
+                <div class="filter-option" data-filter="all">Tất cả</div>
+                <div class="filter-option" data-filter="new">Tin tức</div>
+                <div class="filter-option" data-filter="announcement">
+                  Thông báo
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news-information" id="newsContent">
+          <p>Không tìm thấy bài viết tương ứng!</p>
+          <a href="../pages/newsdetail/19-08-2024.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/19-08-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Sinh nhật 1 tuổi CLB Hỗ trợ Lập Trình
+                  </h4>
+                  <p class="inner-description">
+                    Hôm nay đánh dấu cột mốc tròn 1 năm CLB Hỗ trợ Lập trình
+                    chính thức đi vào hoạt động.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/05-08-2024.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/05-08-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Tiếp nhận phản hồi và góp ý về hoạt động của CLB
+                  </h4>
+                  <p class="inner-description">
+                    CLB mong nhận được những phản hồi và góp ý quý báu từ các
+                    bạn để ngày càng hoàn thiện hơn nữa!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/14-07-2024.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/14-07-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Đội HUSC Newbie giành Huy chương Bạc tại Da Nang Code League
+                    2024.
+                  </h4>
+                  <p class="inner-description">
+                    Đội HUSC Newbie vào top 96 và tham gia vòng Chung kết Code
+                    League 2024 tại FPT Software Đà Nẵng.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/12-07-2024.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/12-07-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Thông báo cuộc thi “SPIT FRONT-END”
+                  </h4>
+                  <p class="inner-description">
+                    Để khuyến khích sáng tạo và tự học, CLB SPIT Khóa 1 tổ chức
+                    cuộc thi “SPIT Front End” lần thứ nhất để chọn bài thi cho
+                    trang web của CLB.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/19-05-2024.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/19-05-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Thông báo mở cửa phòng tự học dành cho các bạn Khoa Công
+                    nghệ thông tin
+                  </h4>
+                  <p class="inner-description">
+                    Thông báo mở cửa phòng tự học.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/06-05-2024.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/06-05-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    CLB SPIT tổ chức Khóa bồi dưỡng giảng viên miền Trung - Tây
+                    Nguyên 2024 với chủ đề “Thống kê với phần mềm R”.
+                  </h4>
+                  <p class="inner-description">
+                    Từ 3-5/5 tại ĐHKH, Đại học Huế, CLB SPIT phối hợp tổ chức
+                    Khóa bồi dưỡng giảng viên 2024 về “Thống kê với phần mềm R”.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/02-05-2024.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/02-05-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Tổng kết SPIT Newbie Contest - Đợt 4
+                  </h4>
+                  <p class="inner-description">
+                    Tổng kết SPIT Newbie Contest 04.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/26-04-2024.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/26-04-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">SPIT Newbie Contest - Đợt 4</h4>
+                  <p class="inner-description">SPIT Newbie Contest - Đợt 4.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/17-04-2024.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/17-04-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Polkadot Workshop in Hue cùng các bạn sinh viên Khoa IT HUSC
+                  </h4>
+                  <p class="inner-description">
+                    Bùng nổ cùng với workshop “Khám phá Công nghệ Blockchain và
+                    hệ sinh thái Polkadot.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/14-04-2024_2.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/14-04-2024_2.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Buổi ngoại khóa của CLB Hỗ trợ Lập trình
+                  </h4>
+                  <p class="inner-description">
+                    Buổi picnic tại biển Hải Dương do CLB Hỗ trợ Lập trình tổ
+                    chức đã mang đến niềm vui tràn đầy, gắn kết các thành viên
+                    qua những hoạt động teambuilding thú vị.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/14-04-2024_1.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/14-04-2024_1.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    CLB Hỗ trợ Lập trình cùng với chuyên mục Nhịp Sống Trẻ Thừa
+                    Thiên Huế
+                  </h4>
+                  <p class="inner-description">
+                    CLB Hỗ trợ Lập trình được góp mặt trong chuyên mục “Nhịp
+                    sống trẻ Thừa Thiên Huế” trên sóng truyền hình TRT.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/04-04-2024.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/04-04-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Tổng kết SPIT Newbie Contest - Đợt 3
+                  </h4>
+                  <p class="inner-description">
+                    Tổng kết SPIT Newbie Contest 03.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/30-03-2024.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/30-03-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">SPIT Newbie Contest - Đợt 3</h4>
+                  <p class="inner-description">SPIT Newbie Contest - Đợt 3.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/24-03-2024.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/24-03-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Seminar "Knowledge, Skills and Applications"
+                  </h4>
+                  <p class="inner-description">
+                    Chiều 23/03 vừa qua, buổi Seminar do CLB Hỗ trợ Lập trình tổ
+                    chức đã diễn ra thành công tốt đẹp.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/23-03-2024.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/23-03-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">SPIT Newbie Contest - Đợt 2</h4>
+                  <p class="inner-description">SPIT Newbie Contest - Đợt 2.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/22-03-2024.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/22-03-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">Thông báo</h4>
+                  <p class="inner-description">
+                    Đóng form đăng ký tham gia Seminar "Knowledge, Skills and
+                    Applications".
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/21-03-2024.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/21-03-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Tổng kết SPIT Expert Contest - Đợt 1
+                  </h4>
+                  <p class="inner-description">
+                    Tổng kết SPIT Newbie Expert 01.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/16-03-2024.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/16-03-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Mở form đăng ký tham gia Seminar "Knowledge, Skills and
+                    Applications"
+                  </h4>
+                  <p class="inner-description">
+                    Cuối tháng 3 này CLB rất vui khi được mang đến cho các bạn
+                    buổi seminar thứ 2!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/15-03-2024.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/15-03-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">SPIT Expert Contest - Đợt 1</h4>
+                  <p class="inner-description">SPIT Expert Contest - Đợt 1.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/08-03-2024.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/08-03-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    SPIT chúc mừng ngày Quốc tế Phụ nữ 08/03
+                  </h4>
+                  <p class="inner-description">
+                    Hôm nay, các thành viên nam của SPIT đã cùng nhau tạo nên
+                    buổi sinh hoạt tràn đầy niềm vui dành cho 9 bạn nữ trong
+                    CLB.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/05-03-2024.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/05-03-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Tổng kết SPIT Newbie Contest - Đợt 1
+                  </h4>
+                  <p class="inner-description">
+                    Tổng kết SPIT Newbie Contest 01.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/02-03-2024.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/02-03-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">SPIT Newbie Contest - Đợt 1</h4>
+                  <p class="inner-description">SPIT Newbie Contest - Đợt 1.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/29-02-2024.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/29-02-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">Tổng quan SPIT CONTEST 2024</h4>
+                  <p class="inner-description">
+                    Mở màn cho chuỗi hoạt động trong năm 2024 là SPIT Contest -
+                    dành cho các bạn học sinh, sinh viên yêu thích thuật toán và
+                    coding.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/26-02-2024.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/26-02-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Recap buổi training thành viên số 1
+                  </h4>
+                  <p class="inner-description">
+                    Chiều hôm qua, ngày 25/03, CLB đã tổ chức thành công
+                    training kiến thức và kỹ năng đầu tiên.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/18-02-2024.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/18-02-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Thông báo mở cửa phòng tự học E202
+                  </h4>
+                  <p class="inner-description">
+                    Thông báo mở cửa phòng tự học.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/09-02-2024.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/09-02-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">Chào đón Xuân Giáp Thìn 2024</h4>
+                  <p class="inner-description">
+                    CLB xin gửi lời chúc sức khoẻ dồi dào và mong mọi người có
+                    những bước tiến lớn trong năm nay!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/25-01-2024.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/25-01-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Thông báo buổi gặp mặt thế hệ thứ 2
+                  </h4>
+                  <p class="inner-description">
+                    Các bạn thành viên thế hệ thứ 2 đã sẵn sàng cho một hành
+                    trình mới cũng gia đình SPIT chưa nhỉ?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/22-01-2024_2.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/22-01-2024_2.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Thông báo danh sách trúng tuyển đợt 2
+                  </h4>
+                  <p class="inner-description">
+                    Chúng ta cùng chào đón những thành viên thế hệ thứ 2!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/22-01-2024_1.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/22-01-2024_1.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Recap buổi phỏng vấn CLB Hỗ trợ Lập trình
+                  </h4>
+                  <p class="inner-description">
+                    CLB xin gửi lời cảm ơn và chúc mừng tất cả các bạn đã hoàn
+                    thành tốt buổi phỏng vấn lần này!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="../pages/newsdetail/20-01-2024_2.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/20-01-2024_2.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Từ CLB Hỗ trợ Lập trình bạn có một thư mới
+                  </h4>
+                  <p class="inner-description">
+                    Chúng mình xin chúc mừng tất cả những bạn đã vượt qua vòng
+                    đơn, tiếp theo là vòng phỏng vấn. Chúc các bạn may mắn!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/20-01-2024_1.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/20-01-2024_1.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">Đóng đơn tuyển thành viên đợt 2</h4>
+                  <p class="inner-description">
+                    Chính thức đóng đơn tuyển thành viên đợt 2.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/19-01-2024.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/19-01-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Còn 3 tiếng trước khi đóng đơn tuyển thành viên đợt 2
+                  </h4>
+                  <p class="inner-description">
+                    Thời gian: đến hết ngày 19/01/2024 (hôm nay).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/15-01-2024.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/15-01-2024.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">Thông báo tuyển thành viên đợt 2</h4>
+                  <p class="inner-description">
+                    CLB Hỗ trợ Lập trình tuyển thành viên đợt 2.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/25-12-2023.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/25-12-2023.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Nhìn lại khoảnh khắc tại phòng tự học
+                  </h4>
+                  <p class="inner-description">
+                    Chúng mình rất may mắn khi nhận được nhiều sự quan tâm từ
+                    các bạn, đồng thời cũng chứng minh những nỗ lực của các bạn
+                    sẽ tạo ra kết quả thật tuyệt vời.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/18-12-2023.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/18-12-2023.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">Thông báo mở cửa phòng tự học</h4>
+                  <p class="inner-description">
+                    Tuần sắp tới là tuần cuối cùng trước khi bước vào kỳ thi kết
+                    thúc học phần, với mong muốn của nhiều bạn sinh viên SPIT
+                    xin mở cửa phòng tự học.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/10-12-2023.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/10-12-2023.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    CLB Hỗ trợ Lập trình với cuộc thi Olympic
+                  </h4>
+                  <p class="inner-description">
+                    Kỳ thi thành công từ 5-8/12/2023.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/28-11-2023.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/28-11-2023.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">Thông báo tạm dừng phòng tự học</h4>
+                  <p class="inner-description">
+                    Do đang trong giai đoạn chuẩn bị để đăng cai tổ chức kỳ thi
+                    Olympic và kỳ thi Lập trình sinh viên quốc tế.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/20-11-2023.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/20-11-2023.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">Chúc mừng Ngày Nhà giáo Việt Nam</h4>
+                  <p class="inner-description">
+                    SPIT xin gửi lời tri ân sâu sắc đến toàn thể quý thầy cô
+                    giáo - những người chắp cánh ước mơ.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/29-10-2023.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/29-10-2023.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">SEMINAR “APPROACH TO PROGRAMMING”</h4>
+                  <p class="inner-description">
+                    Nhằm mục đích giúp các bạn sinh viên K47 Khoa CNTT có những
+                    bước đệm đầu tiên vững chắc, buổi Seminar đã diễn ra tại Hội
+                    trường A1.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/25-10-2023.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/25-10-2023.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    SEMINAR “APPROACH TO PROGRAMMING” quay trở lại
+                  </h4>
+                  <p class="inner-description">
+                    Sau thời gian tạm hoãn do tình hình thời tiết tại Huế đang
+                    phức tạp, Seminar đã trở lại.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/24-10-2023.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/24-10-2023.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Thông báo thời gian tự học tại CLB
+                  </h4>
+                  <p class="inner-description">
+                    CLB SPIT có một phòng tự học chào đón tất cả các bạn!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/23-10-2023.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/23-10-2023.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">CHÚC MỪNG ĐỘI CNTT ĐẠT GIẢI ICPC!</h4>
+                  <p class="inner-description">
+                    HUSC.GreedForSpeed: Giải Nhất.
+                    <br />
+                    HUSC.DPH: Giải Nhì.
+                    <br />
+                    Thành viên đội cũng là trụ cột CLB SPIT!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/13-10-2023.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/13-10-2023.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    SEMINAR “APPROACH TO PROGRAMMING” tạm hoãn
+                  </h4>
+                  <p class="inner-description">
+                    Do tình hình thời tiết tại Huế đang phức tạp, CLB Hỗ trợ Lập
+                    trình xin tạm hoãn chương trình!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/11-10-2023.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/11-10-2023.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    SEMINAR “APPROACH TO PROGRAMMING” sắp diễn ra
+                  </h4>
+                  <p class="inner-description">
+                    8h00 - 10h30, 14/10/2023 tại Phòng E202, Khoa CNTT. Dành cho
+                    K47, học lập trình cơ bản và chia sẻ kinh nghiệm thi cử.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/05-10-2023.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/05-10-2023.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Chào mừng tân thành viên SPIT thế hệ F1
+                  </h4>
+                  <p class="inner-description">
+                    Chúng ta cùng điểm qua những gương mặt mới này nhé!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/01-10-2023.html" class="new">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/01-10-2023.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">Khoảnh khắc vòng phỏng vấn</h4>
+                  <p class="inner-description">
+                    Các bạ tham gia vòng phỏng vấn thành viên CLB Hỗ trợ Lập
+                    trình thế hệ F1 có thấy hình ảnh của mình trong đây không
+                    nhỉ?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/27-09-2023.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/27-09-2023.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">Vòng phỏng vấn</h4>
+                  <p class="inner-description">
+                    Loa loa loa, không để các bạn chờ lâu. Thời gian phỏng vấn
+                    của CLB Hỗ trợ Lập trình đã có rồi đây!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/24-09-2023.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/24-09-2023.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">Đóng đơn tuyển thành viên đợt 1</h4>
+                  <p class="inner-description">
+                    Cảm ơn các bạn đã nhiệt tình đăng ký tham gia vào SPIT thế
+                    hệ F1!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="../pages/newsdetail/18-09-2023.html" class="announcement">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="inner-wrapper">
+                  <img
+                    src="../assets/images/pages/news/News/18-09-2023.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="inner-wrapper">
+                  <h4 class="inner-title">
+                    Tuyển Thành Viên SPIT - Đợt 1 Năm học 2023 - 2024
+                  </h4>
+                  <p class="inner-description">
+                    Tham gia CLB SPIT để phát triển kỹ năng lập trình và hỗ trợ
+                    sinh viên.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div id="paginationContainer"></div>
+      </div>
+      <script src="../assets/js/news-news.js"></script>
+    </section>
+    <!-- End news -->
+
+    <!-- Start footer -->
+    <div class="footer-wrapper">
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-7 col-md-6 col-md-12">
+              <div class="footer-left">
+                <div class="row justify-content-lg-around">
+                  <div class="footer-contact inner-box col-sm-6">
+                    <div class="inner-wrap">
+                      <div class="inner-head">
+                        <img
+                          src="../assets/images/Footer/SPIT_Logo.png"
+                          alt=""
+                        />
+                        <p>
+                          TRƯỜNG ĐẠI HỌC KHOA HỌC, ĐẠI HỌC HUẾ
+                          <br />
+                          <b>CLB HỖ TRỢ LẬP TRÌNH</b>
+                        </p>
+                      </div>
+                      <div class="inner-body">
+                        <div class="contact-phone contact-box">
+                          <div class="icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                          </div>
+                          <p>0702291317 - 0934766830 - 0934094936</p>
+                        </div>
+                        <div class="contact-gmail contact-box">
+                          <div class="icon">
+                            <i class="fa-regular fa-envelope"></i>
+                          </div>
+                          <a href="mailto:clbhtlt.ithusc@gmail.com"
+                            >clbhtlt.ithusc@gmail.com</a
+                          >
+                        </div>
+                        <div class="contact-facbook contact-box">
+                          <div class="icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </div>
+                          <a
+                            href="https://www.facebook.com/clbhtlt.ithusc"
+                            target="_blank"
+                            rel=""
+                            >CLB Hỗ trợ Lập trình</a
+                          >
+                        </div>
+                        <div class="contact-address contact-box">
+                          <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                          </div>
+                          <p>Phòng E202, 77 Nguyễn Huệ, TP. Huế</p>
+                        </div>
+                      </div>
+                      <div class="footer-page-md inner-box col-sm-6 one">
+                        <div class="inner-head">
+                          <p>TIN TỨC, THÔNG BÁO</p>
+                        </div>
+                        <div class="inner-body filter">
+                          <a href="#news" data-filter="new">TIN TỨC</a><br />
+                          <a href="#news" data-filter="announcement"
+                            >THÔNG BÁO</a
+                          ><br />
+                          <a href="#news" data-filter="all"
+                            >TIN TỨC, THÔNG BÁO</a
+                          ><br />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer-organization inner-box col-sm-6">
+                    <div class="inner-wrap">
+                      <div class="inner-head">
+                        <p>TỔ CHỨC</p>
+                      </div>
+                      <div class="organization one">
+                        <img
+                          src="../assets/images/Footer/Hue_University-Logo.png"
+                          alt="Logo của Đại Học Huế"
+                        />
+                        <p>
+                          Đại học Huế
+                          <br />
+                          <a href="https://hueuni.edu.vn/" target="_blank"
+                            >Hue University</a
+                          >
+                        </p>
+                      </div>
+                      <br />
+                      <div class="organization two">
+                        <img
+                          src="../assets/images/Footer/HUSC_Hue_University-Logo.png"
+                          alt="Logo của Đại Học Khoa Học, Đại Học Huế"
+                        />
+                        <p>
+                          Đại học Khoa học Huế
+                          <br />
+                          <a href="https://husc.edu.vn/" target="_blank"
+                            >Hue University Of Sciences</a
+                          >
+                        </p>
+                      </div>
+                      <div class="footer-page-md inner-box col-sm-6 two">
+                        <div class="inner-head">
+                          <p>TRANG KHÁC</p>
+                        </div>
+                        <div class="inner-body">
+                          <a href="./introduce.html">GIỚI THIỆU</a><br />
+                          <a href="./activities.html">HOẠT ĐỘNG</a>
+                          <a href="#" class="active">TIN TỨC, THÔNG BÁO</a>
+                          <a href="./recruitmember.html">TUYỂN THÀNH VIÊN</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-md-12">
+              <div class="footer-right">
+                <div class="row justify-content-lg-around">
+                  <div class="footer-page inner-box col-sm-6">
+                    <div class="inner-wrap">
+                      <div class="inner-head">
+                        <p>TIN TỨC, THÔNG BÁO</p>
+                      </div>
+                      <div class="inner-body filter">
+                        <a href="#news" data-filter="new">TIN TỨC</a><br />
+                        <a href="#news" data-filter="announcement">THÔNG BÁO</a
+                        ><br />
+                        <a href="#news" data-filter="all">TIN TỨC, THÔNG BÁO</a
+                        ><br />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer-page inner-box col-sm-6">
+                    <div class="inner-wrap">
+                      <div class="inner-head">
+                        <p>TRANG KHÁC</p>
+                      </div>
+                      <div class="inner-body">
+                        <a href="./introduce.html">GIỚI THIỆU</a><br />
+                        <a href="./activities.html">HOẠT ĐỘNG</a><br />
+                        <a class="active" href="#">TIN TỨC, THÔNG BÁO</a><br />
+                        <a href="./recruitmember.html">TUYỂN THÀNH VIÊN</a
+                        ><br />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="copy-right">
+        <p>&#64;2024 Design By CodeWaveTeam</p>
+      </div>
+    </div>
+    <!-- End footer -->
+
+    <!-- Start button components -->
+    <!-- Start button to top -->
+    <button
+      onclick="topFunction()"
+      class="top-button"
+      id="topButton"
+      title="Go to top"
+    >
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+    <!-- End button to top -->
+
+    <!-- Start button to bottom -->
+    <button
+      onclick="bottomFunction()"
+      class="bottom-button"
+      id="bottomButton"
+      title="Go to bottom"
+    >
+      <i class="fa-solid fa-angle-down"></i>
+    </button>
+    <!-- End button to bottom -->
+    <script src="../assets/js/button_components.js"></script>
+    <!-- End button components -->
+
+    <!-- Smooth scroll behavior -->
+    <script src="../assets/js/smooth_scroll-behavior.js"></script>
+    <!-- Smooth scroll behavior -->
+
+    <!-- Scroll load fix -->
+    <script src="../assets/js/scroll_load-fix.js"></script>
+    <!-- Scroll load fix -->
+
+    <!-- Interaction -->
+    <script src="../assets/js/interaction.js"></script>
+    <!-- Interaction -->
+  </body>
+
+  <!-- WOW JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!-- WOW JS -->
+
+  <!-- Pagination JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/paginationjs@2/dist/pagination.min.js"></script>
+  <!-- Pagination JS and dependencies -->
+</html>
