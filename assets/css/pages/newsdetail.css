@@ -164,6 +164,7 @@ body {
 }
 
 .savedarticle .close-button {
+  cursor: pointer;
   position: absolute;
   right: 0;
   top: 0;
@@ -215,6 +216,10 @@ body {
   font-size: 17px;
 }
 
+.savedarticle .savedartitle-container .inner-body .saved i {
+  cursor: pointer;
+}
+
 .savedarticle .savedartitle-container .inner-body .saved i:hover {
   color: #ff1b01;
   transform: scale(1.05);
@@ -234,18 +239,18 @@ body {
 
 .savedarticle .no-article img {
   transition: 0.6s;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 
 .savedarticle .no-article h5 {
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 15px;
 }
 
 .savedarticle .no-article p {
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* Start saved article responsive */
@@ -270,6 +275,16 @@ body {
   }
   .savedarticle .savedartitle-container .inner-body .saved i {
     font-size: 15px;
+  }
+  .savedarticle .no-article img {
+    width: 125px;
+    height: 125px;
+  }
+  .savedarticle .no-article h5 {
+    font-size: 16px;
+  }
+  .savedarticle .no-article p {
+    font-size: 14px;
   }
 }
 
@@ -302,6 +317,16 @@ body {
   }
   .savedarticle .savedartitle-container .inner-body .saved i {
     font-size: 13px;
+  }
+  .savedarticle .no-article img {
+    width: 100px;
+    height: 100px;
+  }
+  .savedarticle .no-article h5 {
+    font-size: 14px;
+  }
+  .savedarticle .no-article p {
+    font-size: 12px;
   }
 }
 
