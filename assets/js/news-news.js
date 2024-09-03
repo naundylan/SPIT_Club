@@ -61,13 +61,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function attachPaginationClickEvents() {
-        const paginationLinks = document.querySelectorAll("#paginationContainer .paginationjs-page");
-        paginationLinks.forEach(link => {
-            link.addEventListener('click', () => {
+    const paginationLinks = document.querySelectorAll("#paginationContainer .paginationjs-page");
+    paginationLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault(); // Ngăn chặn hành động mặc định để cuộn sau khi nội dung được cập nhật
+            const targetPage = parseInt(e.target.textContent);
+
+            $("#paginationContainer").pagination("go", targetPage); // Điều hướng đến trang được chọn
+
+            // Đợi nội dung được cập nhật, sau đó cuộn lên đầu phần tử #news
+            setTimeout(() => {
                 window.scrollTo({ top: newsSection.offsetTop, behavior: 'smooth' });
-            });
+            }, 100); // Điều chỉnh thời gian chờ nếu cần thiết
         });
-    }
+    });
+}
 
     // Xử lý sự kiện cho filter icon
     filterIcon.addEventListener("click", () => {
